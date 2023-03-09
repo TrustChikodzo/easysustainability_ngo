@@ -270,7 +270,7 @@ main{
     text-decoration: none;
     padding-top: 1vh;
     color: rgb(20,20,20, 0.7);
-    font-size: 0.9rem !important;
+    font-size: 1rem !important;
 }
 
 /* HOMEPAGE */
@@ -370,14 +370,14 @@ main{
 }
 
 .bg-about-us{
-    background-image: url(/public/images/cool-background.png);
+    background-image: url(./images/cool-background.png);
     background-size: cover;
 }
 
 .about-us-back-end{
     height: 120vh;
     background-color: var(--dg);
-    background-image: linear-gradient(white, transparent), url(/public/images/landscape.jpg);
+    background-image: linear-gradient(white, transparent), url(./images/landscape.jpg);
     background-position: center center;
     background-size: cover;
 }
@@ -402,92 +402,6 @@ main{
     width: 20rem;
     height: 14rem;
 }
-
-/* LOGIN AND REGISTER */
-
-.fa-eye-slash, .fa-eye{
-    position: absolute;
-    top: 40%;
-    right: 5%;
-}
-
-.auth-background{
-    background-image: url(/public/images/plant.jpg);
-    background-attachment: fixed;
-    background-position: 100% 0%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-/* User profile */
-
-.profile-background{
-    background-image: url(/public/images/user-container-back.jpg);
-    background-size: cover;
-    background-position: start;
-    background-attachment: fixed;
-}
-
-.user-profile-card{
-    height: fit-content;
-    text-overflow: hidden;
-    background-image: url(/public/images/user-background.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 5px solid rgba(255, 255, 255, 0.5);
-    border-radius: 3rem;
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
-}
-
-.profile-image{
-    border: 3px solid rgba(255, 255, 255, 0.5);
-    width: 12rem;
-    height: 12rem;
-}
-
-/* FAQ */
-
-/* PROJECTS */
-
-.project-card{
-    padding-bottom: 1rem;
-    min-height: fit-content;
-    color: black;
-    transition: .4s;
-    border: none;
-    border: 4px solid var(--grey);
-}
-
-.card-img-top{
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: 10rem;
-}
-
-.projects-logo{
-    margin-top: auto;
-    width: 2rem !important;
-    height: 2rem !important;
-}
-
-.project-show-img{
-    height: 30vh;
-    margin: 0px !important;
-    padding: 0px !important;
-    overflow-x: hidden;
-    object-fit: cover;
-}
-
-.project-card:hover{
-    color: black;
-    box-shadow: none !important;
-}
-
-/* Animations */
-
 /* Media Queries */
 
 /* Galaxy fold */
@@ -627,7 +541,7 @@ main{
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
-        background-image: url(/public/images/background.jpg);
+        background-image: url(./images/background.jpg);
     }
     /* ABOUT US */
     .about-us-images{
