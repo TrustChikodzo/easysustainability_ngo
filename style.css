@@ -1,0 +1,664 @@
+/* UTILITIES */
+:root{
+    --green: #7ed957;
+    --dg: rgb(20,20,20);
+    --grey: rgba(0, 0, 0, 0.05);
+    --red: #dc3545;
+    --blue: #0DCAF0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Arvo', serif;
+    overflow-y: scroll;
+    color: var(--dg);
+}
+
+main{
+    min-height: 60vh;
+}
+
+.bg-grey{
+    background-color: var(--grey) !important;
+}
+
+.bg-green{
+    background-color: var(--green) !important;
+}
+
+.color-green{
+    color: var(--green);
+}
+
+.fs-xx-small{
+    font-size: .7rem !important;
+}
+
+.fs-x-small{
+    font-size: .8rem !important;
+}
+
+.fs-small{
+    font-size: .9rem !important;
+}
+
+.fs-normal{
+    font-size: 1rem !important;
+}
+
+.hover-green:hover{
+    color: var(--green);
+}
+
+.hover-black:hover{
+    color: black;
+}
+
+.copy-to-clipboard{
+    position: absolute;
+    font-size: small;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    z-index: 10;
+    border-radius: 1rem;
+    border-top-left-radius: 6rem;
+    border-top-right-radius: 6rem;
+    right: 5%;
+    top: 5%;
+    height: 4rem;
+    width: 4rem;
+    background-color: rgba(190, 190, 190);
+}
+
+/* BUTTONS */
+
+.donation-btn{
+    border: 10px solid black;
+}
+
+.btn-blue{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: var(--blue);
+    transition: .4s;
+    border: 2px solid var(--blue) !important;
+}
+
+.btn-blue:hover{
+    color: var(--blue);
+    background-color: white !important;
+    border: 2px solid var(--blue) !important;
+}
+
+.btn-blue:focus{
+    box-shadow: none !important;
+    color: var(--blue) !important;
+}
+
+.btn-red{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white !important;
+    background-color: var(--red);
+    transition: .4s;
+    border: 2px solid var(--red) !important;
+}
+
+.btn-red:hover{
+    color: var(--red)  !important;
+    background-color: white !important;
+    border: 2px solid var(--red) !important;
+}
+
+.btn-red:focus{
+    box-shadow: none !important;
+    color: white;
+}
+
+.glass-btn{
+    position: absolute;
+    height: 100%;
+    width: 15vw;
+    background-color: var(--green);
+    border: 2px solid var(--green);
+    border: 0px solid black;
+    top: 0;
+    right: 0;
+}
+
+.glass-btn:hover{
+    background-color: var(--green);
+    border: 2px solid black;
+}
+
+.btn-login{
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--green);
+    color: white;
+    transition: .4s;
+    border: 2px solid var(--green);
+}
+
+.btn-login:hover{
+    background-color: white;
+    color: var(--green);
+    border: 2px solid var(--green);
+}
+
+.btn-login:focus{
+    color: var(--green) !important;
+    box-shadow: none !important;
+}
+
+/* ANIMATED BUTTON */
+
+.custom-button{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 0.7s;
+    background: linear-gradient(90deg, var(--green) 50%, white 50%);
+    background-size: 200%;
+    background-position: 0px 0px;
+    cursor: pointer;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    border: none;
+    border: 2px solid var(--green);
+}
+
+.custom-button:focus{
+    background-position: -100% 0px;
+    background-color: white;
+    color: var(--green);
+}
+
+.custom-button:hover{
+    background-position: -100% 0px;
+    background-color: white;
+    color: var(--green);
+}
+
+.custom-button:focus{
+    box-shadow: none !important;
+    border: 2px solid var(--green);
+}
+
+/* NAVBAR */
+
+.nav-custom{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: var(--green);
+    font-size: 1rem;
+}
+
+.nav-top{
+    position: static;
+}
+
+.nav-logo{
+    width: 48px;
+    height: 48px;
+}
+
+.name-NGO{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.navbar-toggler{
+    color: var(--dg);
+    border: 2px solid var(--dg);
+}
+
+.a-underline{
+    border-bottom: 2px solid transparent;
+}
+
+.a-underline-keep{
+    border-bottom: 2px solid var(--dg);
+    color: var(--dg);
+}
+
+.a-underline:hover{
+    border-bottom: 2px solid var(--dg);
+    color: var(--dg);
+}
+
+/* DROPDOWN */
+
+#dropdown_menu{
+    position: sticky;
+    background-color: white;
+    height: fit-content;
+    z-index: 99;
+}
+
+#dropdownIcon:hover{
+    color: var(--dg);
+    cursor: pointer;
+}
+
+.dropdownIcon-keep{
+    color: var(--dg);
+}
+
+.dropdown-head{
+    font-weight: 600;
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.dropdown-a{
+    text-align: center;
+    text-decoration: none;
+    padding-top: 1vh;
+    color: rgb(20,20,20, 0.7);
+    font-size: 0.9rem !important;
+}
+
+/* HOMEPAGE */
+
+.homepage-sm-img{
+    width: 30rem;
+}
+
+.homepage-xl-img{
+    position: relative;
+    left: -2vw;
+    width: 104vw !important;
+    height: 22vh;
+    overflow-x: hidden;
+    object-fit: cover;
+}
+
+.home-donate-img{
+    height: 20rem;
+}
+
+.home-card-title{
+    background-color: var(--green);
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    text-overflow: hidden;
+}
+
+.card-images{
+    border: 0.2rem solid white;
+}
+
+/* FOOTER */
+
+.fot-cont{
+    background-color: var(--dg);
+    flex-grow: 1;
+}
+
+.fot-head{
+    color: aliceblue;
+    font-size: 2rem;
+    border-bottom: 1px solid aliceblue;
+    padding: 1vh;
+}
+
+.fot-a{
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.fot-a:hover{
+    color: var(--green);
+}
+
+.icons-fot{
+    color: white;
+    cursor: pointer;
+}
+
+.icons-fot:hover{
+    color: var(--green);
+}
+
+.fot-p1{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    letter-spacing: 30px;
+}
+
+.fot-p2{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+}
+
+.fot-p3{
+    font-size: 1.2vh;
+}
+
+/* ABOUT US */
+
+.about-us-story{
+    text-overflow: hidden;
+    font-size: small;
+    color: var(--dg);
+}
+
+.about-us-images{
+    width: 18rem;
+    height: 12rem;
+}
+
+.bg-about-us{
+    background-image: url(/public/images/cool-background.png);
+    background-size: cover;
+}
+
+.about-us-back-end{
+    height: 120vh;
+    background-color: var(--dg);
+    background-image: linear-gradient(white, transparent), url(/public/images/landscape.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.about-us-wave-end{
+    width: 100vw;
+    right: 0px;
+    bottom: -4px;
+    overflow-x: hidden;
+}
+
+/* TEAM */
+
+.team-images{
+    border-radius: 20%;
+    width: 10rem;
+}
+
+/* ORGANIZATIONS */
+
+.org-hands-img{
+    width: 20rem;
+    height: 14rem;
+}
+
+/* LOGIN AND REGISTER */
+
+.fa-eye-slash, .fa-eye{
+    position: absolute;
+    top: 40%;
+    right: 5%;
+}
+
+.auth-background{
+    background-image: url(/public/images/plant.jpg);
+    background-attachment: fixed;
+    background-position: 100% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* User profile */
+
+.profile-background{
+    background-image: url(/public/images/user-container-back.jpg);
+    background-size: cover;
+    background-position: start;
+    background-attachment: fixed;
+}
+
+.user-profile-card{
+    height: fit-content;
+    text-overflow: hidden;
+    background-image: url(/public/images/user-background.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3rem;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-image{
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    width: 12rem;
+    height: 12rem;
+}
+
+/* FAQ */
+
+/* PROJECTS */
+
+.project-card{
+    padding-bottom: 1rem;
+    min-height: fit-content;
+    color: black;
+    transition: .4s;
+    border: none;
+    border: 4px solid var(--grey);
+}
+
+.card-img-top{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 10rem;
+}
+
+.projects-logo{
+    margin-top: auto;
+    width: 2rem !important;
+    height: 2rem !important;
+}
+
+.project-show-img{
+    height: 30vh;
+    margin: 0px !important;
+    padding: 0px !important;
+    overflow-x: hidden;
+    object-fit: cover;
+}
+
+.project-card:hover{
+    color: black;
+    box-shadow: none !important;
+}
+
+/* Animations */
+
+/* Media Queries */
+
+/* Galaxy fold */
+
+@media screen and (max-width: 281px) {
+    body{
+        font-size: 0.8rem;
+    }
+    /* NAVBAR */
+    .nav-logo{
+        width: 48px;
+        height: 48px;
+    }
+    .name-NGO{
+        font-size: 0.7rem;
+    }
+    /* HOMEPAGE */
+    .home-card-title{
+        font-size: 2rem;
+    }
+    /* ABOUT US */
+    .about-us-images{
+        width: 16rem;
+        height: 10rem;
+    }
+    /* USER PROFILE */
+    .profile-image{
+        border: 3px solid rgba(255, 255, 255, 0.5);
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+/* Surface Duo */
+@media screen and (width: 540px) {
+    body{
+        font-size: 1rem;
+    }
+    /* HOMEPAGE */
+    .home-card-title{
+        font-size: 3.5rem;
+    }
+    /* ABOUT US */
+    .about-us-images{
+        width: 26rem;
+        height: 20rem;
+    }
+    .about-us-story{
+        font-size: medium;
+    }
+    /* USER PROFILE */
+    .profile-image{
+        border: 4px solid rgba(255, 255, 255, 0.5);
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+/* M */
+@media screen and (min-width: 541px) {
+    body{
+        font-size: 1.1rem;
+    }
+    /* NAVBAR */
+    .nav-logo{
+        width: 64px;
+        height: 64px;
+    }
+    .name-NGO{
+        font-size: 0.8rem;
+    }
+    /* HOMEPAGE */
+    .home-donate-img{
+        height: 25rem;
+    }
+    /* ABOUT US */
+    .about-us-images{
+        width: 40vh;
+        height: 20vh;
+    }
+    .about-us-story{
+        font-size: medium;
+    }
+    /* USER PROFILE */
+    .profile-image{
+        border: 4px solid rgba(255, 255, 255, 0.5);
+        width: 14rem;
+        height: 14rem;
+    }
+}
+
+/* L */
+@media screen and (min-width: 1024px) {
+    body{
+        font-size: 1.2rem;
+    }
+    /* NAVBAR */
+    .nav-logo{
+        width: 64px;
+        height: 64px;
+    }
+    .name-NGO{
+        font-size: 0.7rem;
+    }
+    /* HOMEPAGE */
+    .home-donate-img{
+        height: 30rem;
+    }
+    .home-card-title{
+        font-size: 4rem;
+    }
+    /* ABOUT US */
+    .about-us-images{
+        width: 65vh;
+        height: 45vh;
+    }
+    .about-us-story{
+        font-size: large;
+    }
+    /* USER PROFILE */
+    .profile-image{
+        border: 4px solid rgba(255, 255, 255, 0.5);
+        width: 16rem;
+        height: 16rem;
+    }
+}
+
+/* XL */
+@media screen and (min-width: 1200px) {
+    /* NAVBAR */
+    .name-NGO{
+        font-size: 0.8rem;
+    }
+    /* HOMEPAGE */
+    .title-container{
+        min-height: 70vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        background-image: url(/public/images/background.jpg);
+    }
+    /* ABOUT US */
+    .about-us-images{
+        width: 60vh;
+        height: 40vh;
+    }
+    /* Homepage Card */
+    .home-card-title{
+        font-size: 4.5rem;
+    }
+    /* USER PROFILE */
+    .profile-image{
+        border: 4px solid rgba(255, 255, 255, 0.5);
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+/* XXL */
+@media screen and (min-width: 1400px) {
+    /* HOMEPAGE */
+    .title-container{
+        min-height: 90vh;
+    }
+
+    /* ABOUT US */
+    
+    /* USER PROFILE */
+    .profile-image{
+        border: 5px solid rgba(255, 255, 255, 0.5);
+        width: 17rem;
+        height: 17rem;
+    }
+}

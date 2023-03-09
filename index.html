@@ -1,12 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>{{$title ?? Easy Sustainability | NGO}}</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/icon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/icon/favicon-16x16.png">
+    <link rel="manifest" href="./images/icon/site.webmanifest">
+    
+    <!-- Animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style src="./style.css"></style>
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Sofia+Sans+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>hello world!</h1>
+    
+    <main>
+        <!-- LANDING PAGE -->
+        
+        <section class="container-fluid">
+            <header class="d-none d-xl-flex row title-container align-items-center">
+                <h2 class="col-12 display-1 text-end text-white fw-bolder">
+                    <span class="me-5">DISSEMINATING</span><br>SUSTAINABILITY
+                </h2>
+            </header>
+            <div class="d-none d-xl-flex row overflow-hidden">
+                <figure class="col-12">
+                    <img src="./images/wave.svg" class="homepage-xl-img" alt="Landing page waves.">
+                </figure>
+            </div>
+            <div class="d-xl-none row bg-white mt-md-4 mb-5">
+                <h2 class="col-12 text-center color-green display-4 fw-bolder">DISSEMINATING</h2>
+                <figure class="col-12 d-flex justify-content-center">
+                    <img src="./images/homepage-sm.jpg" class="img-fluid homepage-sm-img" alt="Disseminating sustainability around the world.">
+                </figure>
+                <h2 class="col-12 text-center color-green display-4 fw-bolder">SUSTAINABILITY</h2>
+            </div>
+        </section>
+        
+        <!--  HOME CALL TO ACTION -->
+        
+        <section class="container-fluid container-md">
+            <div class="row justify-content-center align-items-center">
+                <header class="col-12 col-md-6 col-lg-4 my-4">
+                    <h2 class="color-green fw-semibold">SUSTAINABILITY</h2>
+                    <article>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, aliquam tempora expedita quasi illum, exercitationem sapiente nihil qui distinctio optio.
+                    </article>
+                </header>
+                <figure class="col-12 col-md-6 col-lg-4 d-none d-md-flex justify-content-center">
+                    <img src="./images/home-1st.jpg" class="img-fluid rounded home-donate-img" alt="">
+                </figure>
+                <div class="row justify-content-center mt-md-4">
+                    <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+                        <form target="_blank" action="https://www.paypal.com/donate" method="post" target="_top">
+                            <input type="hidden" name="hosted_button_id" value="U22ZY76WZU9PL" />
+                            <button type="submit" class="btn btn-lg form-control btn-red p-2">
+                                DONATE
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- HOME CARD -->
+        
+        <section class="container-fluid container-md rounded mt-5 py-5 bg-green" data-aos="fade-down">
+            <header class="row align-items-center">
+                <h2 class="col-12 home-card-title">Education</h2>
+            </header>
+            <div class="row justify-content-evenly my-4">
+                <figure class="col-11 col-md-5 col-lg-4 col-xxl-3" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="./images/home-card-img.jpg" class="img-fluid card-images rounded-3" alt="">
+                </figure>
+                <figure class="col-md-5 col-lg-4 col-xxl-3 d-none d-md-inline" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="./images/home-card-img2.jpg" class="img-fluid card-images rounded-3" alt="">
+                </figure>
+                <figure class="col-lg-4 col-xxl-3 d-none d-lg-inline" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="./images/home-card-img.jpg" class="img-fluid card-images rounded-3" alt="">
+                </figure>
+            </div>
+            <div class="row justify-content-center">
+                <article class="col-10 bg-white rounded p-4 p-md-5">
+                    <header class="row">
+                        <h2 class="col-12 text-center color-green text-uppercase fw-semibold">LOREM</h2>
+                        <p class="col-12 text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, fugit voluptates, veritatis qui aut amet magnam quia velit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, eius. Rem unde quo dicta odit laboriosam rerum impedit perferendis nulla expedita.
+                        </p>
+                    </header>
+                </article>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- FOOTER -->
+    
+    <!-- footer -->
+    <footer class="container-fluid fot-cont">
+        
+        <div class="row">
+            
+            <div class="col-12 d-flex justify-content-center mt-5 mb-2">
+                <img src="./images/logo.png" class="img-fluid rounded-5" alt="">
+            </div>
+            
+            <div class="col-12">
+                <p class="text-white text-center ms-4 fot-p1">EASY</p>
+                <p class="text-white text-center fot-p2">SUSTAINABILITY</p>
+            </div>
+            
+            <div class="col-12 d-flex justify-content-center mb-4">
+                <a class="icons-fot mx-3" target="_blank" href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+                <a class="icons-fot mx-3" target="_blank" href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a class="icons-fot mx-3" target="_blank" href=""><i class="fa-brands fa-twitter fa-2x"></i></a>
+                <a class="icons-fot mx-3" target="_blank" href="https://www.linkedin.com/company/easysustainability-project2022/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            </div>
+            
+            <div class="col-12 text-center">
+                <p class="text-white fot-p3">
+                    Copyright © 2023 Easy Sustainability | Terms | Privacy
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <!-- CUSTOM JS -->
+    <style src="./script.js"></style>
+    
+    <!-- ICONS  -->
+    <script src="https://kit.fontawesome.com/5e9c555a84.js" crossorigin="anonymous"></script>
+    
+    <!-- Animate on scroll  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
