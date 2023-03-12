@@ -248,10 +248,12 @@ main{
 }
 
 .about-us-back-end{
-    height: 80vh;
+    position: relative;
+    border-top: none !important;
+    height: 40vh;
     background-color: var(--dg);
     background-image: linear-gradient(white, transparent), url(./images/landscape.jpg);
-    background-position: center center;
+    background-position: center start;
     background-size: cover;
 }
 
@@ -366,7 +368,7 @@ main{
         height: 45vh;
     }
     .about-us-back-end{
-        height: 100vh;
+        height: 70vh;
     }
     /* USER PROFILE */
     .profile-image{
@@ -394,6 +396,9 @@ main{
     .about-us-images{
         width: 32rem;
         height: 20rem;
+    }
+    .about-us-back-end{
+        height: 100vh;
     }
     /* Homepage Card */
     .home-card-title{
