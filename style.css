@@ -51,58 +51,19 @@ main{
     font-size: 1rem !important;
 }
 
+.fs-medium{
+    font-size: 1.2rem !important;
+}
+
 .hover-green:hover{
     color: var(--green);
 }
 
 .hover-black:hover{
-    color: black;
-}
-
-.copy-to-clipboard{
-    position: absolute;
-    font-size: small;
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    color: black;
-    z-index: 10;
-    border-radius: 1rem;
-    border-top-left-radius: 6rem;
-    border-top-right-radius: 6rem;
-    right: 5%;
-    top: 5%;
-    height: 4rem;
-    width: 4rem;
-    background-color: rgba(190, 190, 190);
+    color: var(--dg);
 }
 
 /* BUTTONS */
-
-.donation-btn{
-    border: 10px solid black;
-}
-
-.btn-blue{
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-    background-color: var(--blue);
-    transition: .4s;
-    border: 2px solid var(--blue) !important;
-}
-
-.btn-blue:hover{
-    color: var(--blue);
-    background-color: white !important;
-    border: 2px solid var(--blue) !important;
-}
-
-.btn-blue:focus{
-    box-shadow: none !important;
-    color: var(--blue) !important;
-}
 
 .btn-red{
     text-transform: uppercase;
@@ -122,79 +83,6 @@ main{
 .btn-red:focus{
     box-shadow: none !important;
     color: white;
-}
-
-.glass-btn{
-    position: absolute;
-    height: 100%;
-    width: 15vw;
-    background-color: var(--green);
-    border: 2px solid var(--green);
-    border: 0px solid black;
-    top: 0;
-    right: 0;
-}
-
-.glass-btn:hover{
-    background-color: var(--green);
-    border: 2px solid black;
-}
-
-.btn-login{
-    text-transform: uppercase;
-    font-weight: bold;
-    background-color: var(--green);
-    color: white;
-    transition: .4s;
-    border: 2px solid var(--green);
-}
-
-.btn-login:hover{
-    background-color: white;
-    color: var(--green);
-    border: 2px solid var(--green);
-}
-
-.btn-login:focus{
-    color: var(--green) !important;
-    box-shadow: none !important;
-}
-
-/* ANIMATED BUTTON */
-
-.custom-button{
-    text-transform: uppercase;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    transition: 0.7s;
-    background: linear-gradient(90deg, var(--green) 50%, white 50%);
-    background-size: 200%;
-    background-position: 0px 0px;
-    cursor: pointer;
-    border-radius: 2rem;
-    font-size: 0.9rem;
-    border: none;
-    border: 2px solid var(--green);
-}
-
-.custom-button:focus{
-    background-position: -100% 0px;
-    background-color: white;
-    color: var(--green);
-}
-
-.custom-button:hover{
-    background-position: -100% 0px;
-    background-color: white;
-    color: var(--green);
-}
-
-.custom-button:focus{
-    box-shadow: none !important;
-    border: 2px solid var(--green);
 }
 
 /* NAVBAR */
@@ -228,11 +116,6 @@ main{
 
 .a-underline{
     border-bottom: 2px solid transparent;
-}
-
-.a-underline-keep{
-    border-bottom: 2px solid var(--dg);
-    color: var(--dg);
 }
 
 .a-underline:hover{
@@ -302,10 +185,6 @@ main{
     text-overflow: hidden;
 }
 
-.card-images{
-    border: 0.2rem solid white;
-}
-
 /* FOOTER */
 
 .fot-cont{
@@ -358,12 +237,6 @@ main{
 
 /* ABOUT US */
 
-.about-us-story{
-    text-overflow: hidden;
-    font-size: small;
-    color: var(--dg);
-}
-
 .about-us-images{
     width: 18rem;
     height: 12rem;
@@ -375,33 +248,13 @@ main{
 }
 
 .about-us-back-end{
-    height: 120vh;
+    height: 80vh;
     background-color: var(--dg);
     background-image: linear-gradient(white, transparent), url(./images/landscape.jpg);
     background-position: center center;
     background-size: cover;
 }
 
-.about-us-wave-end{
-    width: 100vw;
-    right: 0px;
-    bottom: -4px;
-    overflow-x: hidden;
-}
-
-/* TEAM */
-
-.team-images{
-    border-radius: 20%;
-    width: 10rem;
-}
-
-/* ORGANIZATIONS */
-
-.org-hands-img{
-    width: 20rem;
-    height: 14rem;
-}
 /* Media Queries */
 
 /* Galaxy fold */
@@ -449,9 +302,6 @@ main{
         width: 26rem;
         height: 20rem;
     }
-    .about-us-story{
-        font-size: medium;
-    }
     /* USER PROFILE */
     .profile-image{
         border: 4px solid rgba(255, 255, 255, 0.5);
@@ -481,9 +331,6 @@ main{
     .about-us-images{
         width: 40vh;
         height: 20vh;
-    }
-    .about-us-story{
-        font-size: medium;
     }
     /* USER PROFILE */
     .profile-image{
@@ -518,8 +365,8 @@ main{
         width: 65vh;
         height: 45vh;
     }
-    .about-us-story{
-        font-size: large;
+    .about-us-back-end{
+        height: 100vh;
     }
     /* USER PROFILE */
     .profile-image{
@@ -545,8 +392,8 @@ main{
     }
     /* ABOUT US */
     .about-us-images{
-        width: 60vh;
-        height: 40vh;
+        width: 32rem;
+        height: 20rem;
     }
     /* Homepage Card */
     .home-card-title{
